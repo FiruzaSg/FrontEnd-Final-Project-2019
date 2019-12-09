@@ -1,0 +1,168 @@
+// Global CSS
+@import "shared/variables";
+@import "shared/mixings";
+@import "shared/fonts";
+
+// Components
+@import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/index";
+
+// * {
+//   box-sizing: border-box;
+//   margin: 0 auto;
+// }
+
+.alertbox {
+  background-color: $primary-red-color;
+  border-radius: 0%;
+  position: relative;
+  p {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+
+    a {
+      font-size: 17px;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  button {
+    transition: all 0.3s;
+    float: right;
+
+    i {
+      opacity: 0.9;
+      color: white;
+      font-size: 22px;
+      &:hover {
+        color: white;
+        opacity: 0.99;
+      }
+    }
+  }
+}
+
+#social-links-info {
+  background-color: $primary-black-color;
+  .contact-info {
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          font-family: $primary-font-family;
+          font-weight: 400;
+          color: white;
+          font-size: 15px;
+          &:hover {
+            color: $primary-orange-color;
+          }
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .social-media {
+    float: right;
+    ul {
+      li {
+        padding-right: 16px;
+        a,
+        span,
+        i {
+          color: white;
+        }
+        a {
+          font-family: $primary-font-family;
+        }
+        i {
+          font-size: 15px;
+          &:hover {
+            color: $primary-orange-color;
+          }
+        }
+      }
+      li:last-child::before {
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 1px;
+        background-color: white;
+        right: 195px;
+        bottom: 21px;
+      }
+    }
+    button {
+      color: white;
+      font-family: $primary-font-family;
+      position: relative;
+    }
+  }
+  .navbar {
+    .collapse {
+      .navbar-nav {
+        .nav-item {
+          a {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+#main-slider {
+  #carouselExampleControls {
+    .slide-overlay {
+      position: relative;
+      left: 0;
+      top: 0;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      .carousel-inner {
+        .carousel-item {
+        }
+      }
+    }
+  }
+}
+
+//     .social-media {
+//       position: absolute;
+//       display: flex;
+//       right: 50%;
+//       ul {
+//         display: flex;
+//         li {
+//           margin-right: 25px;
+//           list-style-type: none;
+//           i {
+//             color: white;
+//             font-size: 15px;
+//             &:hover {
+//               color: $primary-orange-color;
+//             }
+//           }
+//         }
+//       }
+//       span {
+//         color: white;
+//       }
+//       a {
+//         text-decoration: none;
+//         color: white;
+//         &:hover {
+//           color: $primary-orange-color;
+//         }
+//       }
+//       button {
+//       }
+//     }
+
+// }
+// }

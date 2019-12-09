@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+.alertbox {
+  background-color: #F6475F;
+  border-radius: 0%;
+  position: relative;
+}
+
+.alertbox p {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.alertbox p a {
+  font-size: 17px;
+  color: white;
+  text-decoration: underline;
+}
+
+.alertbox button {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  float: right;
+}
+
+.alertbox button i {
+  opacity: 0.9;
+  color: white;
+  font-size: 22px;
+}
+
+.alertbox button i:hover {
+  color: white;
+  opacity: 0.99;
+}
+
+#social-links-info {
+  background-color: #343a40;
+}
+
+#social-links-info .contact-info ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 15px;
+}
+
+#social-links-info .contact-info ul li a:hover {
+  color: #ffc107;
+}
+
+#social-links-info .contact-info ul li a i {
+  color: white;
+}
+
+#social-links-info .social-media {
+  float: right;
+}
+
+#social-links-info .social-media ul li {
+  padding-right: 16px;
+}
+
+#social-links-info .social-media ul li a,
+#social-links-info .social-media ul li span,
+#social-links-info .social-media ul li i {
+  color: white;
+}
+
+#social-links-info .social-media ul li a {
+  font-family: "Roboto", sans-serif;
+}
+
+#social-links-info .social-media ul li i {
+  font-size: 15px;
+}
+
+#social-links-info .social-media ul li i:hover {
+  color: #ffc107;
+}
+
+#social-links-info .social-media ul li:last-child::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 1px;
+  background-color: white;
+  right: 195px;
+  bottom: 21px;
+}
+
+#social-links-info .social-media button {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+#social-links-info .navbar .collapse .navbar-nav .nav-item a {
+  text-transform: uppercase;
+}
+
+#main-slider #carouselExampleControls .slide-overlay {
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/*# sourceMappingURL=style.css.map */
