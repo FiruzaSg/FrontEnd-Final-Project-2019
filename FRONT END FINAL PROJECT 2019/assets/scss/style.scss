@@ -1,0 +1,186 @@
+// Global CSS
+@import "shared/variables";
+// @import "shared/mixings";
+@import "shared/fonts";
+
+// Components
+// @import "components/header";
+// @import "components/footer";
+
+// Pages
+// @import "pages/index";
+
+// * {
+//   box-sizing: border-box;
+//   margin: 0 auto;
+// }
+
+.alertbox {
+  background-color: $primary-red-color;
+  border-radius: 0%;
+  position: relative;
+  p {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+
+    a {
+      font-size: 17px;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  button {
+    transition: all 0.3s;
+    float: right;
+    i {
+
+      color: white;
+      font-size: 22px;
+      &:hover {
+        color: white;
+
+      }
+    }
+  }
+}
+
+#social-links-info {
+  background-color: $primary-black-color;
+  .contact-info {
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          font-family: $primary-font-family;
+          font-weight: 400;
+          color: white;
+          font-size: 15px;
+          &:hover {
+            color: $primary-orange-color;
+          }
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .social-media {
+    float: right;
+    ul {
+      li {
+        padding-right: 16px;
+        a,
+        span,
+        i {
+          color: white;
+        }
+        a {
+          font-family: $primary-font-family;
+        }
+        i {
+          font-size: 15px;
+          &:hover {
+            color: $primary-orange-color;
+          }
+        }
+      }
+      li:last-child::before {
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 1px;
+        background-color: white;
+        right: 195px;
+        bottom: 21px;
+      }
+    }
+    button {
+      color: white;
+      font-family: $primary-font-family;
+      position: relative;
+    }
+  }
+}
+
+.navbar {
+  .collapse {
+    ul {
+      li {
+        padding-right: 6px;
+        a {
+          font-family: $secondary-font-family;
+          font-size: 14px;
+          background-color: white;
+          font-weight: 600;
+          color: black;
+          position: relative;
+        }
+        a.active {
+          color: $primary-orange-color;
+        }
+        a:hover {
+          color: $primary-orange-color;
+          transition: all 0.5s;
+        }
+        i {
+          position: absolute;
+          top: 12px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+#main-slider {
+  #carouselExampleControls {
+    .carousel-inner {
+      .carousel-item {
+      }
+    }
+  }
+}
+
+#why-choose-eduglobal {
+  background-color: #f7f7f7;
+
+  .eduglobal-title {
+    text-align: center;
+    h3 {
+      font-family: $secondary-font-family;
+      font-weight: bold;
+    }
+  }
+  .eduglobal-items {
+    .eduglobal-item {
+      text-align: center;
+      border-radius: 10%;
+      background-color: white;
+
+      .eduglobal-item-content{
+        margin-top: 30px;
+        margin: 28px;
+      }
+      .book-box,.globe-box,.instructor-box{
+        border-radius: 100%;
+        display: inline-block;
+        padding: 18px;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+      }
+      .book-box {
+        background-color: $primary-red-color;
+      }
+      .globe-box {
+        background-color: $primary-orange-color
+      }
+      .instructor-box {
+        background-color: $primary-green-color
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+.alertbox {
+  background-color: #F6475F;
+  border-radius: 0%;
+  position: relative;
+}
+
+.alertbox p {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.alertbox p a {
+  font-size: 17px;
+  color: white;
+  text-decoration: underline;
+}
+
+.alertbox button {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  float: right;
+}
+
+.alertbox button i {
+  color: white;
+  font-size: 22px;
+}
+
+.alertbox button i:hover {
+  color: white;
+}
+
+#social-links-info {
+  background-color: #343a40;
+}
+
+#social-links-info .contact-info ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 15px;
+}
+
+#social-links-info .contact-info ul li a:hover {
+  color: #ffc107;
+}
+
+#social-links-info .contact-info ul li a i {
+  color: white;
+}
+
+#social-links-info .social-media {
+  float: right;
+}
+
+#social-links-info .social-media ul li {
+  padding-right: 16px;
+}
+
+#social-links-info .social-media ul li a,
+#social-links-info .social-media ul li span,
+#social-links-info .social-media ul li i {
+  color: white;
+}
+
+#social-links-info .social-media ul li a {
+  font-family: "Roboto", sans-serif;
+}
+
+#social-links-info .social-media ul li i {
+  font-size: 15px;
+}
+
+#social-links-info .social-media ul li i:hover {
+  color: #ffc107;
+}
+
+#social-links-info .social-media ul li:last-child::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 1px;
+  background-color: white;
+  right: 195px;
+  bottom: 21px;
+}
+
+#social-links-info .social-media button {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.navbar .collapse ul li {
+  padding-right: 6px;
+}
+
+.navbar .collapse ul li a {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  background-color: white;
+  font-weight: 600;
+  color: black;
+  position: relative;
+}
+
+.navbar .collapse ul li a.active {
+  color: #ffc107;
+}
+
+.navbar .collapse ul li a:hover {
+  color: #ffc107;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar .collapse ul li i {
+  position: absolute;
+  top: 12px;
+  cursor: pointer;
+}
+
+#why-choose-eduglobal {
+  background-color: #f7f7f7;
+}
+
+#why-choose-eduglobal .eduglobal-title {
+  text-align: center;
+}
+
+#why-choose-eduglobal .eduglobal-title h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item {
+  text-align: center;
+  border-radius: 10%;
+  background-color: white;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .eduglobal-item-content {
+  margin-top: 30px;
+  margin: 28px;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .book-box, #why-choose-eduglobal .eduglobal-items .eduglobal-item .globe-box, #why-choose-eduglobal .eduglobal-items .eduglobal-item .instructor-box {
+  border-radius: 100%;
+  display: inline-block;
+  padding: 18px;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .book-box {
+  background-color: #F6475F;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .globe-box {
+  background-color: #ffc107;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .instructor-box {
+  background-color: #B3D369;
+}
+/*# sourceMappingURL=style.css.map */
