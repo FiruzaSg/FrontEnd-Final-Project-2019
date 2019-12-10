@@ -20,8 +20,9 @@
   border-radius: 0%;
   position: relative;
   p {
-    font-size: 15px;
-    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 16px;
+    font-weight: bold;
     color: white;
 
     a {
@@ -34,12 +35,10 @@
     transition: all 0.3s;
     float: right;
     i {
-
       color: white;
       font-size: 22px;
       &:hover {
         color: white;
-
       }
     }
   }
@@ -48,14 +47,15 @@
 #social-links-info {
   background-color: $primary-black-color;
   .contact-info {
-    ul {
+    .contact-list {
       li {
         a {
           text-decoration: none;
           font-family: $primary-font-family;
-          font-weight: 400;
+          letter-spacing: -0.5px;
           color: white;
-          font-size: 15px;
+          font-size: 14px;
+          transition: all 0.3s;
           &:hover {
             color: $primary-orange-color;
           }
@@ -68,53 +68,70 @@
   }
   .social-media {
     float: right;
-    ul {
+    .social-links {
       li {
-        padding-right: 16px;
+        padding-right: 22px;
+        font-size: 13px;
         a,
         span,
         i {
           color: white;
         }
-        a {
-          font-family: $primary-font-family;
-        }
         i {
-          font-size: 15px;
+          transition: all 0.3s;
           &:hover {
             color: $primary-orange-color;
           }
         }
       }
-      li:last-child::before {
-        content: "";
-        position: absolute;
-        height: 25px;
-        width: 1px;
-        background-color: white;
-        right: 195px;
-        bottom: 21px;
+    }
+    .log-apply {
+      position: relative;
+      li {
+        padding-right: 22px;
+        font-size: 14px;
+        a {
+          color: white;
+          font-family: $secondary-font-family;
+          text-decoration: none;
+          transition: all 0.3s;
+          &:hover {
+            color: $primary-orange-color;
+          }
+        }
+        button {
+          color: white;
+          font-family: $primary-font-family;
+          font-size: 13px;
+        }
       }
     }
-    button {
-      color: white;
-      font-family: $primary-font-family;
-      position: relative;
+    .log-apply::before {
+      content: "";
+      position: absolute;
+      left: -64px;
+      top: 6px;
+      height: 24px;
+      width: 1px;
+      background-color: #eee;
     }
   }
 }
 
 .navbar {
   .collapse {
+    margin: 10px 10px;
     ul {
       li {
         padding-right: 6px;
+
         a {
-          font-family: $secondary-font-family;
-          font-size: 14px;
+          letter-spacing: -0.5px;
+          font-family: $primary-font-family;
+          font-size: 15px;
           background-color: white;
-          font-weight: 600;
-          color: black;
+          font-weight: bold;
+          color: $secondary-black-color;
           position: relative;
         }
         a.active {
@@ -130,11 +147,17 @@
           cursor: pointer;
         }
       }
+      li.nav-search {
+        float: right;
+        .dropdown-menu {
+        }
+      }
     }
   }
 }
 
 #main-slider {
+  padding: 0 !important;
   #carouselExampleControls {
     .carousel-inner {
       .carousel-item {
@@ -145,42 +168,131 @@
 
 #why-choose-eduglobal {
   background-color: #f7f7f7;
-
+  font-family: $secondary-font-family;
+  height: 650px;
   .eduglobal-title {
     text-align: center;
     h3 {
+      margin-top: 50px;
       font-family: $secondary-font-family;
       font-weight: bold;
     }
+    p {
+      color: $primary-gray-color;
+      font-weight: 500;
+      font-family: $primary-font-family;
+      font-size: $primary-font-size;
+    }
   }
   .eduglobal-items {
+    display: flex;
     .eduglobal-item {
       text-align: center;
-      border-radius: 10%;
+      border-radius: 3%;
       background-color: white;
+      margin-top: 30px;
+      padding: 27px;
+      transition: all 0.7s;
 
-      .eduglobal-item-content{
-        margin-top: 30px;
-        margin: 28px;
+      &:hover {
+        transform: translateY(-10px);
+        .boxes::before {
+          position: absolute;
+          content: " ";
+          height: 90px;
+          width: 90px;
+          border: 3px solid white;
+          border-radius: 50%;
+          top: 5px;
+          right: 5px;
+        }
       }
-      .book-box,.globe-box,.instructor-box{
+      h5 {
+        font-weight: bold;
+      }
+      p {
+        color: $primary-gray-color;
+        font-size: $primary-font-size;
+      }
+
+      .book-box,
+      .globe-box,
+      .instructor-box {
         border-radius: 100%;
         display: inline-block;
-        padding: 18px;
+        padding: 24px;
         position: relative;
         height: 100px;
         width: 100px;
         text-align: center;
+        img {
+          height: 50px;
+          width: 50px;
+        }
       }
       .book-box {
         background-color: $primary-red-color;
       }
       .globe-box {
-        background-color: $primary-orange-color
+        background-color: $primary-orange-color;
       }
       .instructor-box {
-        background-color: $primary-green-color
+        background-color: $primary-green-color;
       }
     }
   }
+}
+
+#popular-categories {
+  .popular-categories-title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    h2 {
+      font-family: $secondary-font-family;
+    }
+    p {
+      color: $primary-gray-color;
+      margin-top: 15px;
+    }
+  }
+  .popular-items {
+    .popular-item {
+      height: 120px;
+      width: 170px;
+      border-radius: 5px;
+      margin-left: 16px;
+      .item-content {
+        text-align: center;
+        color: white;
+        padding: 32px;
+        i {
+          font-size: 30px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-family: $secondary-font-family;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.item1 {
+  background-color: ($primary-red-color);
+}
+.item2 {
+  background-color: darken($primary-green-color, 6);
+}
+.item3 {
+  background-color: (#ffbc09);
+}
+.item4 {
+  background-color: (#f94fa4);
+}
+.item5 {
+  background-color: (#38ddf7);
+}
+.item6 {
+  background-color: (#f89035);
 }

@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"');
 .alertbox {
-  background-color: #F6475F;
+  background-color: #f6475f;
   border-radius: 0%;
   position: relative;
 }
 
 .alertbox p {
-  font-size: 15px;
-  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 16px;
+  font-weight: bold;
   color: white;
 }
 
@@ -37,19 +39,21 @@
   background-color: #343a40;
 }
 
-#social-links-info .contact-info ul li a {
+#social-links-info .contact-info .contact-list li a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.5px;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-#social-links-info .contact-info ul li a:hover {
+#social-links-info .contact-info .contact-list li a:hover {
   color: #ffc107;
 }
 
-#social-links-info .contact-info ul li a i {
+#social-links-info .contact-info .contact-list li a i {
   color: white;
 }
 
@@ -57,42 +61,65 @@
   float: right;
 }
 
-#social-links-info .social-media ul li {
-  padding-right: 16px;
+#social-links-info .social-media .social-links li {
+  padding-right: 22px;
+  font-size: 13px;
 }
 
-#social-links-info .social-media ul li a,
-#social-links-info .social-media ul li span,
-#social-links-info .social-media ul li i {
+#social-links-info .social-media .social-links li a,
+#social-links-info .social-media .social-links li span,
+#social-links-info .social-media .social-links li i {
   color: white;
 }
 
-#social-links-info .social-media ul li a {
-  font-family: "Roboto", sans-serif;
+#social-links-info .social-media .social-links li i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-#social-links-info .social-media ul li i {
-  font-size: 15px;
-}
-
-#social-links-info .social-media ul li i:hover {
+#social-links-info .social-media .social-links li i:hover {
   color: #ffc107;
 }
 
-#social-links-info .social-media ul li:last-child::before {
-  content: "";
-  position: absolute;
-  height: 25px;
-  width: 1px;
-  background-color: white;
-  right: 195px;
-  bottom: 21px;
+#social-links-info .social-media .log-apply {
+  position: relative;
 }
 
-#social-links-info .social-media button {
+#social-links-info .social-media .log-apply li {
+  padding-right: 22px;
+  font-size: 14px;
+}
+
+#social-links-info .social-media .log-apply li a {
   color: white;
-  font-family: "Roboto", sans-serif;
-  position: relative;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#social-links-info .social-media .log-apply li a:hover {
+  color: #ffc107;
+}
+
+#social-links-info .social-media .log-apply li button {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+#social-links-info .social-media .log-apply::before {
+  content: "";
+  position: absolute;
+  left: -64px;
+  top: 6px;
+  height: 24px;
+  width: 1px;
+  background-color: #eee;
+}
+
+.navbar .collapse {
+  margin: 10px 10px;
 }
 
 .navbar .collapse ul li {
@@ -100,11 +127,12 @@
 }
 
 .navbar .collapse ul li a {
-  font-family: "Rubik", sans-serif;
-  font-size: 14px;
+  letter-spacing: -0.5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
   background-color: white;
-  font-weight: 600;
-  color: black;
+  font-weight: bold;
+  color: #292b2c;
   position: relative;
 }
 
@@ -124,8 +152,18 @@
   cursor: pointer;
 }
 
+.navbar .collapse ul li.nav-search {
+  float: right;
+}
+
+#main-slider {
+  padding: 0 !important;
+}
+
 #why-choose-eduglobal {
   background-color: #f7f7f7;
+  font-family: "Rubik", sans-serif;
+  height: 650px;
 }
 
 #why-choose-eduglobal .eduglobal-title {
@@ -133,33 +171,80 @@
 }
 
 #why-choose-eduglobal .eduglobal-title h3 {
+  margin-top: 50px;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
 }
 
+#why-choose-eduglobal .eduglobal-title p {
+  color: #888888f2;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+#why-choose-eduglobal .eduglobal-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #why-choose-eduglobal .eduglobal-items .eduglobal-item {
   text-align: center;
-  border-radius: 10%;
+  border-radius: 3%;
   background-color: white;
-}
-
-#why-choose-eduglobal .eduglobal-items .eduglobal-item .eduglobal-item-content {
   margin-top: 30px;
-  margin: 28px;
+  padding: 27px;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
-#why-choose-eduglobal .eduglobal-items .eduglobal-item .book-box, #why-choose-eduglobal .eduglobal-items .eduglobal-item .globe-box, #why-choose-eduglobal .eduglobal-items .eduglobal-item .instructor-box {
+#why-choose-eduglobal .eduglobal-items .eduglobal-item:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item:hover .boxes::before {
+  position: absolute;
+  content: " ";
+  height: 90px;
+  width: 90px;
+  border: 3px solid white;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item h5 {
+  font-weight: bold;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item p {
+  color: #888888f2;
+  font-size: 16px;
+}
+
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .book-box,
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .globe-box,
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .instructor-box {
   border-radius: 100%;
   display: inline-block;
-  padding: 18px;
+  padding: 24px;
   position: relative;
   height: 100px;
   width: 100px;
   text-align: center;
 }
 
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .book-box img,
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .globe-box img,
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .instructor-box img {
+  height: 50px;
+  width: 50px;
+}
+
 #why-choose-eduglobal .eduglobal-items .eduglobal-item .book-box {
-  background-color: #F6475F;
+  background-color: #f6475f;
 }
 
 #why-choose-eduglobal .eduglobal-items .eduglobal-item .globe-box {
@@ -168,5 +253,66 @@
 
 #why-choose-eduglobal .eduglobal-items .eduglobal-item .instructor-box {
   background-color: #B3D369;
+}
+
+#popular-categories .popular-categories-title {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+#popular-categories .popular-categories-title h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+#popular-categories .popular-categories-title p {
+  color: #888888f2;
+  margin-top: 15px;
+}
+
+#popular-categories .popular-items .popular-item {
+  height: 120px;
+  width: 170px;
+  border-radius: 5px;
+  margin-left: 16px;
+}
+
+#popular-categories .popular-items .popular-item .item-content {
+  text-align: center;
+  color: white;
+  padding: 32px;
+}
+
+#popular-categories .popular-items .popular-item .item-content i {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+#popular-categories .popular-items .popular-item .item-content p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.item1 {
+  background-color: #f6475f;
+}
+
+.item2 {
+  background-color: #a7cc51;
+}
+
+.item3 {
+  background-color: #ffbc09;
+}
+
+.item4 {
+  background-color: #f94fa4;
+}
+
+.item5 {
+  background-color: #38ddf7;
+}
+
+.item6 {
+  background-color: #f89035;
 }
 /*# sourceMappingURL=style.css.map */
