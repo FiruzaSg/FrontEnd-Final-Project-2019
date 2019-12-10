@@ -157,10 +157,21 @@
 }
 
 #main-slider {
+  position: relative;
   padding: 0 !important;
   #carouselExampleControls {
     .carousel-inner {
       .carousel-item {
+        .main-slider-overlay{
+          height: 517px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+
+        }
       }
     }
   }
@@ -295,4 +306,80 @@
 }
 .item6 {
   background-color: (#f89035);
+}
+
+#about-us {
+  font-family: $secondary-font-family;
+  margin-top: 50px;
+  .about-us-content {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    height: 410px;
+    width: 870px;
+    border-radius: 0px 200px 200px 0px;
+    padding: 75px;
+    background-color: white;
+    box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) !important;
+
+    h2 {
+      font-weight: bold;
+    }
+    p {
+      color: $primary-gray-color;
+    }
+    .counter {
+      margin-top: 10px;
+      font-family: $secondary-font-family;
+      ul {
+        li{
+          padding: 17px;
+          h6{
+            font-weight: bold;
+            font-size: 16px;
+            color: $secondary-black-color;
+          }
+        }
+        li.list-item1 {
+          span {
+            font-size: 40px;
+            font-weight: bold;
+            color: $primary-red-color;
+          }
+        }
+        li.list-item2 {
+          span {
+            font-size: 40px;
+            font-weight: bold;
+            color: $primary-green-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-us-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .img-overlay {
+    height: 517px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    .play-circle {
+      border-radius: 50%;
+      background-color: $primary-orange-color;
+      color: white;
+      position: absolute;
+      font-size: 53px;
+      top: 50%;
+      left: 50%;
+    }
+  }
 }

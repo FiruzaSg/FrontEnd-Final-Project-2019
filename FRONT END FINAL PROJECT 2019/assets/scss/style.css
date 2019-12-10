@@ -157,7 +157,18 @@
 }
 
 #main-slider {
+  position: relative;
   padding: 0 !important;
+}
+
+#main-slider #carouselExampleControls .carousel-inner .carousel-item .main-slider-overlay {
+  height: 517px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
 }
 
 #why-choose-eduglobal {
@@ -314,5 +325,84 @@
 
 .item6 {
   background-color: #f89035;
+}
+
+#about-us {
+  font-family: "Rubik", sans-serif;
+  margin-top: 50px;
+}
+
+#about-us .about-us-content {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  height: 410px;
+  width: 870px;
+  border-radius: 0px 200px 200px 0px;
+  padding: 75px;
+  background-color: white;
+  -webkit-box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) !important;
+          box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+#about-us .about-us-content h2 {
+  font-weight: bold;
+}
+
+#about-us .about-us-content p {
+  color: #888888f2;
+}
+
+#about-us .about-us-content .counter {
+  margin-top: 10px;
+  font-family: "Rubik", sans-serif;
+}
+
+#about-us .about-us-content .counter ul li {
+  padding: 17px;
+}
+
+#about-us .about-us-content .counter ul li h6 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #292b2c;
+}
+
+#about-us .about-us-content .counter ul li.list-item1 span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f6475f;
+}
+
+#about-us .about-us-content .counter ul li.list-item2 span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #B3D369;
+}
+
+.about-us-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.about-us-image .img-overlay {
+  height: 517px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+.about-us-image .img-overlay .play-circle {
+  border-radius: 50%;
+  background-color: #ffc107;
+  color: white;
+  position: absolute;
+  font-size: 53px;
+  top: 50%;
+  left: 50%;
 }
 /*# sourceMappingURL=style.css.map */
