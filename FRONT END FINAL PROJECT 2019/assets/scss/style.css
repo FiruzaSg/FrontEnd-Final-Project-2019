@@ -39,22 +39,27 @@
   background-color: #343a40;
 }
 
+#social-links-info .contact-info .contact-list li {
+  padding-left: 5px;
+}
+
 #social-links-info .contact-info .contact-list li a {
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: -0.5px;
   color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+#social-links-info .contact-info .contact-list li a i {
+  vertical-align: middle;
+  font-size: 17px;
+}
+
+#social-links-info .contact-info .contact-list li a span {
   font-size: 14px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  letter-spacing: -0.5px;
 }
 
 #social-links-info .contact-info .contact-list li a:hover {
   color: #ffc107;
-}
-
-#social-links-info .contact-info .contact-list li a i {
-  color: white;
 }
 
 #social-links-info .social-media {
@@ -78,6 +83,14 @@
 }
 
 #social-links-info .social-media .social-links li i:hover {
+  color: #ffc107;
+}
+
+#social-links-info .social-media .social-links li a {
+  text-decoration: none;
+}
+
+#social-links-info .social-media .social-links li a:hover {
   color: #ffc107;
 }
 
@@ -161,8 +174,14 @@
   padding: 0 !important;
 }
 
+#main-slider #carouselExampleControls .carousel-inner .carousel-item {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
 #main-slider #carouselExampleControls .carousel-inner .carousel-item .main-slider-overlay {
-  height: 517px;
+  height: 100%;
   width: 100%;
   background-color: black;
   position: absolute;
@@ -172,9 +191,9 @@
 }
 
 #why-choose-eduglobal {
+  padding: 100px 0;
   background-color: #f7f7f7;
   font-family: "Rubik", sans-serif;
-  height: 650px;
 }
 
 #why-choose-eduglobal .eduglobal-title {
@@ -182,7 +201,6 @@
 }
 
 #why-choose-eduglobal .eduglobal-title h3 {
-  margin-top: 50px;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
 }
@@ -210,20 +228,27 @@
   transition: all 0.7s;
 }
 
+#why-choose-eduglobal .eduglobal-items .eduglobal-item .boxes::before {
+  position: absolute;
+  content: " ";
+  height: 113px;
+  width: 114px;
+  border: 3.5px solid white;
+  border-radius: 50%;
+  top: -5.5px;
+  right: -7.5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 #why-choose-eduglobal .eduglobal-items .eduglobal-item:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
 #why-choose-eduglobal .eduglobal-items .eduglobal-item:hover .boxes::before {
-  position: absolute;
-  content: " ";
-  height: 90px;
-  width: 90px;
-  border: 3px solid white;
-  border-radius: 50%;
-  top: 5px;
-  right: 5px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 #why-choose-eduglobal .eduglobal-items .eduglobal-item h5 {
@@ -267,8 +292,7 @@
 }
 
 #popular-categories .popular-categories-title {
-  margin-top: 100px;
-  margin-bottom: 30px;
+  padding: 72px 0px 40px;
 }
 
 #popular-categories .popular-categories-title h2 {
@@ -280,25 +304,30 @@
   margin-top: 15px;
 }
 
-#popular-categories .popular-items .popular-item {
-  height: 120px;
-  width: 170px;
-  border-radius: 5px;
-  margin-left: 16px;
+#popular-categories a {
+  text-decoration: none;
+  width: 175px !important;
+  margin-right: 5px;
 }
 
-#popular-categories .popular-items .popular-item .item-content {
+#popular-categories .popular-item {
+  height: 120px;
+  border-radius: 5px;
+}
+
+#popular-categories .popular-item .item-content {
   text-align: center;
   color: white;
-  padding: 32px;
+  padding: 20px;
+  margin: 8px;
 }
 
-#popular-categories .popular-items .popular-item .item-content i {
+#popular-categories .popular-item .item-content i {
   font-size: 30px;
   margin-bottom: 8px;
 }
 
-#popular-categories .popular-items .popular-item .item-content p {
+#popular-categories .popular-item .item-content p {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
 }
@@ -329,17 +358,14 @@
 
 #about-us {
   font-family: "Rubik", sans-serif;
-  margin-top: 50px;
 }
 
 #about-us .about-us-content {
   z-index: 2;
-  position: absolute;
-  top: 50px;
-  height: 410px;
-  width: 870px;
+  height: 393px;
+  width: 100%;
   border-radius: 0px 200px 200px 0px;
-  padding: 75px;
+  padding: 43px;
   background-color: white;
   -webkit-box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) !important;
           box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) !important;
@@ -354,12 +380,12 @@
 }
 
 #about-us .about-us-content .counter {
-  margin-top: 10px;
+  margin-top: 5px;
   font-family: "Rubik", sans-serif;
 }
 
 #about-us .about-us-content .counter ul li {
-  padding: 17px;
+  padding-right: 20px;
 }
 
 #about-us .about-us-content .counter ul li h6 {
@@ -380,29 +406,221 @@
   color: #B3D369;
 }
 
-.about-us-image {
+#about-us .about-us-image {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-.about-us-image .img-overlay {
-  height: 517px;
+#about-us .about-us-image .img-overlay {
+  height: 100%;
   width: 100%;
   background-color: black;
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
-.about-us-image .img-overlay .play-circle {
+#about-us .about-us-image .img-overlay .play-circle {
   border-radius: 50%;
   background-color: #ffc107;
   color: white;
   position: absolute;
   font-size: 53px;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 47%;
+}
+
+#our-courses {
+  font-family: "Rubik", sans-serif;
+}
+
+#our-courses .our-courses-title {
+  margin-top: 80px;
+}
+
+#our-courses .our-courses-title h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+#our-courses .our-courses-title p {
+  color: #888888f2;
+  margin-top: 15px;
+}
+
+#our-courses .card {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 22rem;
+  margin-top: 30px;
+}
+
+#our-courses .card .content-image {
+  overflow: hidden;
+}
+
+#our-courses .card .content-image img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#our-courses .card .content-image img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#our-courses .card .card-body {
+  padding: 12px 17px;
+}
+
+#our-courses .card .card-body a {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#our-courses .card .card-body p {
+  color: #888888f2;
+  font-size: 16px;
+}
+
+#our-courses .card .card-body-footer {
+  padding: 0px 17px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#our-courses .card .card-body-footer .review-stars li {
+  padding-right: 5px;
+}
+
+#our-courses .card .card-body-footer .review-stars li i {
+  color: #ffc107;
+  font-size: 13px;
+}
+
+#our-courses .card .card-body-footer .share-and-comment {
+  float: right;
+}
+
+#our-courses .card .card-body-footer .share-and-comment li {
+  padding-left: 12px;
+}
+
+#our-courses .card .card-body-footer .share-and-comment li a i {
+  font-size: 14px;
+}
+
+#our-courses .card .card-body-footer .share-and-comment li a span {
+  font-size: 15px;
+}
+
+#our-courses .card .card-footer {
+  padding: 11px 18px 0px 18px;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#our-courses .card .card-footer .teacher {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#our-courses .card .card-footer .teacher li img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#our-courses .card .card-footer .course-price .free-btn {
+  height: 37px;
+  width: 62px;
+  text-decoration: none;
+  cursor: unset;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 0.25rem;
+  color: #155724;
+}
+
+#our-courses .card .card-footer .course-price .price-btn {
+  height: 37px;
+  width: 59px;
+  text-decoration: none;
+  cursor: unset;
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 0.25rem;
+  color: #155724;
+}
+
+#our-courses .btn-view-courses {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  background-color: #ffbc09;
+  color: white;
+}
+
+#our-courses .btn-view-courses .btn-view-content {
+  margin: 5px 17px;
+}
+
+#our-courses .btn-view-courses .btn-view-content span {
+  color: white;
+  font-size: 17px;
+}
+
+#our-courses .btn-view-courses .btn-view-content i {
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+#bottom-counter {
+  margin-top: 80px;
+  background-color: #506882;
+}
+
+#bottom-counter .item {
+  margin: 90px 0px;
+  color: white;
+}
+
+#bottom-counter .item h3 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+#bottom-counter .item span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+#bottom-counter .item .value {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#bottom-counter .item .key {
+  font-size: 17px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a.animated {
+  text-decoration: none;
+  color: #292b2c;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a.animated:hover {
+  color: #ffc107;
 }
 /*# sourceMappingURL=style.css.map */

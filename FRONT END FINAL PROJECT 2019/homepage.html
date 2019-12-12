@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/cb82496f17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 
@@ -40,10 +42,12 @@
                         <div class="contact-info mt-3 text-center">
                             <ul class="contact-list d-flex list-unstyled">
                                 <li class="contact-list-item">
-                                    <a href="#"><i class="fas fa-mobile-alt px-2"></i>123-456-7890</a>
+                                    <a href="#" class="animated"><i
+                                            class="fas fa-mobile-alt px-2"></i><span>123-456-7890</span></a>
                                 </li>
                                 <li class="contact-list-item">
-                                    <a href="#"><i class="far fa-envelope px-2"></i>info@yourmail.com</a>
+                                    <a href="#" class="animated"><i
+                                            class="far fa-envelope px-2"></i><span>info@yourmail.com</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -188,15 +192,17 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/banner1.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <img src="assets/img/banner1.jpg" class="img-fluid" alt="...">
                         <div class="main-slider-overlay"></div>
                     </div>
-                    <!-- <div class="carousel-item">
-                        <img src="assets/img/banner2.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-item">
+                        <img src="assets/img/banner2.jpg" class="img-fluid" alt="...">
+                        <div class="main-slider-overlay"></div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/banner3.jpg" class="d-block w-100 img-fluid" alt="...">
-                    </div> -->
+                        <img src="assets/img/banner3.jpg" class="img-fluid" alt="...">
+                        <div class="main-slider-overlay"></div>
+                    </div>
                 </div>
 
 
@@ -211,19 +217,21 @@
             </div>
         </section>
 
-
         <section id="why-choose-eduglobal">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="eduglobal-title mt-5">
-                        <h3><b>Why Choose Eduglobal</b></h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there <br>
-                            isn't anything
-                            embarrassing hidden in the middle of text</p>
+                    <div class="col-lg-12">
+                        <div class="eduglobal-title">
+                            <h3><b>Why Choose Eduglobal</b></h3>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there <br>
+                                isn't anything
+                                embarrassing hidden in the middle of text</p>
+                        </div>
                     </div>
+
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="eduglobal-items">
                             <div class="eduglobal-item shadow-sm">
                                 <div class="book-box boxes mb-3">
@@ -240,7 +248,7 @@
 
 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="eduglobal-items">
                             <div class="eduglobal-item shadow-sm">
                                 <div class="globe-box boxes mb-3">
@@ -256,7 +264,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="eduglobal-items">
                             <div class="eduglobal-item shadow-sm">
                                 <div class="instructor-box boxes mb-3">
@@ -329,112 +337,444 @@
 
         <section id="popular-categories">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="popular-categories-title">
-                        <h2 class="text-center"><b>Most Popular Categories</b></h2>
-                        <p class="text-center">If you are going to use a passage of Lorem Ipsum, you need to be sure
-                            there <br>
-                            isn't anything embarrassing hidden in the middle of text</p>
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="popular-categories-title">
+                            <h2 class="text-center"><b>Most Popular Categories</b></h2>
+                            <p class="text-center">If you are going to use a passage of Lorem Ipsum, you need to be sure
+                                there <br>
+                                isn't anything embarrassing hidden in the middle of text</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <ul class="popular-items list-unstyled d-flex">
-                        <div class="popular-item item1">
+                    <div class="col-lg-12 companies-slider">
+                        <a href="#" class="popular-item item1">
                             <div class="item-content">
                                 <i class="fa fa-globe"></i>
                                 <p>Language</p>
                             </div>
-
-
-                        </div>
-                        <div class="popular-item item2">
+                        </a>
+                        <a href="#" class="popular-item item2">
                             <div class="item-content">
                                 <i class="fa fa-chart-line"></i>
                                 <p>Business</p>
                             </div>
-
-
-                        </div>
-                        <div class="popular-item item3">
+                        </a>
+                        <a href="#" class="popular-item item3">
                             <div class="item-content">
                                 <i class="fa fa-book"></i>
                                 <p>Academics</p>
                             </div>
-
-
-                        </div>
-                        <div class="popular-item item4">
+                        </a>
+                        <a href="#" class="popular-item item4">
                             <div class="item-content">
                                 <i class="fa fa-camera"></i>
                                 <p>Photography</p>
                             </div>
-
-
-                        </div>
-                        <div class="popular-item item5">
+                        </a>
+                        <a href="#" class="popular-item item5">
                             <div class="item-content">
                                 <i class="fa fa-heartbeat"></i>
                                 <p>Health Fitness</p>
                             </div>
-
-
-                        </div>
-                        <div class="popular-item item6">
+                        </a>
+                        <a href="#" class="popular-item item6">
                             <div class="item-content">
                                 <i class="fa fa-code"></i>
                                 <p>Development</p>
                             </div>
-
-
-                        </div>
-                    </ul>
+                        </a>
+                        <a href="#" class="popular-item item1">
+                            <div class="item-content">
+                                <i class="fa fa-globe"></i>
+                                <p>Language</p>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-item item2">
+                            <div class="item-content">
+                                <i class="fa fa-chart-line"></i>
+                                <p>Business</p>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-item item3">
+                            <div class="item-content">
+                                <i class="fa fa-book"></i>
+                                <p>Academics</p>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-item item4">
+                            <div class="item-content">
+                                <i class="fa fa-camera"></i>
+                                <p>Photography</p>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-item item5">
+                            <div class="item-content">
+                                <i class="fa fa-heartbeat"></i>
+                                <p>Health Fitness</p>
+                            </div>
+                        </a>
+                        <a href="#" class="popular-item item6">
+                            <div class="item-content">
+                                <i class="fa fa-code"></i>
+                                <p>Development</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+
+
         </section>
 
         <section id="about-us">
-            <div class="row d-flex">
+            <div class="row">
                 <div class="col-md-6">
                     <div class="about-us-content shadow-lg">
                         <h2 class="mb-3">About Us</h2>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                            anything
                             embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet
                             tend to repeat predefined chunks as necessary</p>
 
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                            anything
                             embarrassing hidden in the middle of text.</p>
                         <div class="counter">
                             <ul class="list-unstyled d-flex">
-                                <li class="list-item1"> <span>260</span>
+                                <li class="list-item1"> <span class="value">260</span>
                                     <h6>Free Courses</h6>
                                 </li>
-                                <li class="list-item2"><span>152</span>
+                                <li class="list-item2"><span class="value">152</span>
                                     <h6>Paid Courses</h6>
                                 </li>
                             </ul>
                         </div>
-
-
                     </div>
                 </div>
                 <div class="col-md-6">
-
                     <div class="about-us-image">
                         <img src="assets/img/about_img.jpg" alt="" class="img-fluid">
-
                         <div class="img-overlay"><i class="fas fa-play-circle play-circle"></i></div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-courses">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="our-courses-title">
+                            <h2 class="text-center"><b>Our Courses</b></h2>
+                            <p class="text-center">If you are going to use a passage of Lorem Ipsum, you need to be sure
+                                there <br>
+                                isn't anything embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img1.jpg"
+                                        class="card-img-top" alt="..."></a></div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                            </div>
+                            <div class="card-body-footer d-flex">
+                                <ul class="review-stars list-unstyled d-flex">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                </ul>
+                                <ul class="share-and-comment list-unstyled d-flex">
+                                    <li><a href="#" class="animated"><i class="far fa-user"></i><span
+                                                class="px-1">31</span></a></li>
+                                    <li><a href="#" class="animated"><i class="far fa-heart"></i><span
+                                                class="px-1">10</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer d-flex">
+                                <ul class="teacher list-unstyled d-flex">
+                                    <li><img src="assets/img/user1.jpg" alt=""></li>
+                                    <li class="px-2"><a href="#" class="animated">Alia Noor
+
+                                        </a></li>
+                                </ul>
+                                <ul class="course-price list-unstyled">
+                                    <button class="btn btn-link free-btn">Free</button>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img2.jpg"
+                                        class="card-img-top" alt="..."></a></div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                            </div>
+                            <div class="card-body-footer d-flex">
+                                <ul class="review-stars list-unstyled d-flex">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                </ul>
+                                <ul class="share-and-comment list-unstyled d-flex">
+                                    <li><a href="#" class="animated"><i class="far fa-user"></i><span
+                                                class="px-1">31</span></a></li>
+                                    <li><a href="#" class="animated"><i class="far fa-heart"></i><span
+                                                class="px-1">10</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer d-flex">
+                                <ul class="teacher list-unstyled d-flex">
+                                    <li><img src="assets/img/user2.jpg" alt=""></li>
+                                    <li class="px-2"><a href="#" class="animated">Dany Core
+
+                                        </a></li>
+                                </ul>
+                                <ul class="course-price list-unstyled">
+                                    <button class="btn btn-link price-btn">$49</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img3.jpg"
+                                        class="card-img-top" alt="..."></a></div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                            </div>
+                            <div class="card-body-footer d-flex">
+                                <ul class="review-stars list-unstyled d-flex">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                </ul>
+                                <ul class="share-and-comment list-unstyled d-flex">
+                                    <li><a href="#" class="animated"><i class="far fa-user"></i><span
+                                                class="px-1">31</span></a></li>
+                                    <li><a href="#" class="animated"><i class="far fa-heart"></i><span
+                                                class="px-1">10</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer d-flex">
+                                <ul class="teacher list-unstyled d-flex">
+                                    <li><img src="assets/img/user3.jpg" alt=""></li>
+                                    <li class="px-2"><a href="#" class="animated">Smith Parker
+                                        </a></li>
+                                </ul>
+                                <ul class="course-price list-unstyled">
+                                    <button class="btn btn-link free-btn">Free</button>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img4.jpg"
+                                        class="card-img-top" alt="..."></a></div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                            </div>
+                            <div class="card-body-footer d-flex">
+                                <ul class="review-stars list-unstyled d-flex">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                </ul>
+                                <ul class="share-and-comment list-unstyled d-flex">
+                                    <li><a href="#" class="animated"><i class="far fa-user"></i><span
+                                                class="px-1">31</span></a></li>
+                                    <li><a href="#" class="animated"><i class="far fa-heart"></i><span
+                                                class="px-1">10</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer d-flex">
+                                <ul class="teacher list-unstyled d-flex">
+                                    <li><img src="assets/img/user4.jpg" alt=""></li>
+                                    <li class="px-2"><a href="#" class="animated">Sara Robert
+                                        </a></li>
+                                </ul>
+                                <ul class="course-price list-unstyled">
+                                    <button class="btn btn-link price-btn">$54</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img5.jpg"
+                                        class="card-img-top" alt="..."></a></div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                            </div>
+                            <div class="card-body-footer d-flex">
+                                <ul class="review-stars list-unstyled d-flex">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                </ul>
+                                <ul class="share-and-comment list-unstyled d-flex">
+                                    <li><a href="#" class="animated"><i class="far fa-user"></i><span
+                                                class="px-1">31</span></a></li>
+                                    <li><a href="#" class="animated"><i class="far fa-heart"></i><span
+                                                class="px-1">10</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer d-flex">
+                                <ul class="teacher list-unstyled d-flex">
+                                    <li><img src="assets/img/user5.jpg" alt=""></li>
+                                    <li class="px-2"><a href="#" class="animated">Wendy Nahse</a></li>
+                                </ul>
+                                <ul class="course-price list-unstyled">
+                                    <button class="btn btn-link price-btn">$36</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img6.jpg"
+                                        class="card-img-top" alt="..."></a></div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                            </div>
+                            <div class="card-body-footer d-flex">
+                                <ul class="review-stars list-unstyled d-flex">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                </ul>
+                                <ul class="share-and-comment list-unstyled d-flex">
+                                    <li><a href="#" class="animated"><i class="far fa-user"></i><span
+                                                class="px-1">31</span></a></li>
+                                    <li><a href="#" class="animated"><i class="far fa-heart"></i><span
+                                                class="px-1">10</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer d-flex">
+                                <ul class="teacher list-unstyled d-flex">
+                                    <li><img src="assets/img/user6.jpg" alt=""></li>
+                                    <li class="px-2"><a href="#" class="animated">John Wood
+                                        </a></li>
+                                </ul>
+                                <ul class="course-price list-unstyled">
+                                    <button class="btn btn-link price-btn">$22</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="row justify-content-center d-flex">
+                    <a href="homepage.html">
+                        <button class="btn btn-default btn-view-courses">
+                            <div class="btn-view-content">
+                                <span>View All Courses</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+
+                        </button></a>
+
+
                 </div>
 
             </div>
 
 
-            </div>
-            </div>
+
+
 
         </section>
 
+        <section id="bottom-counter">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-3 item">
+                        <h3>
+                            <span class="value">1800</span>+
+                        </h3>
+                        <span class="key">Students</span>
+                    </div>
+                    <div class="col-lg-3 item">
+                        <h3>
+                            <span class="value">70</span>
+                        </h3>
+                        <span class="key">Courses</span>
+                    </div>
+                    <div class="col-lg-3 item">
+                        <h3>
+                            <span class="value">700</span>+
+                        </h3>
+                        <span class="key">Certified Teachers</span>
 
+
+
+                    </div>
+                    <div class="col-lg-3 item">
+                        <h3>
+                            <span class="value">1200</span>+
+                        </h3>
+
+                        <span class="key">Award Winning</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 
@@ -447,7 +787,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
