@@ -181,7 +181,12 @@ header {
       }
       li.nav-search {
         float: right;
-        .dropdown-menu {
+      }
+    }
+    .navbar-nav {
+      .dropdown-menu {
+        a.active {
+          color: $primary-orange-color;
         }
       }
     }
@@ -232,7 +237,7 @@ header {
         width: 114px;
         border: 3.5px solid white;
         border-radius: 50%;
-        top: -5.5px;
+        top: -6.5px;
         right: -7.5px;
         transition: all 0.3s ease-in-out;
       }
@@ -687,13 +692,14 @@ header {
             font-family: $third-font-family;
             font-size: 17px;
             height: auto;
+            color: white ;
           }
           ::placeholder {
             color: white;
           }
           select.form-control {
             ::placeholder {
-              color: white;
+              color: white !important;
             }
           }
         }
@@ -761,6 +767,12 @@ header {
     }
     p {
       margin-top: 15px;
+    }
+  }
+  .card{
+    border-radius: 10px;
+    img{
+     
     }
   }
 }

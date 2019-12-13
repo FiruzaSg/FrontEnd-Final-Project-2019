@@ -38,11 +38,11 @@ $(document).ready(function () {
   });
 
 
-  // Main Slider
+  // Categories Slider
 
   if ($(".companies-slider").length) {
     $(".companies-slider").slick({
-      // infinite: true,
+      arrows:false,
       slidesToShow: 6,
       slidesToScroll: 1
     });
