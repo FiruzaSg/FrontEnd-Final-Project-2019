@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"');
+header {
+  width: 100%;
+}
+
 .alertbox {
   background-color: #f6475f;
   border-radius: 0%;
@@ -191,25 +195,9 @@
 }
 
 #why-choose-eduglobal {
-  padding: 100px 0;
   background-color: #f7f7f7;
   font-family: "Rubik", sans-serif;
-}
-
-#why-choose-eduglobal .eduglobal-title {
-  text-align: center;
-}
-
-#why-choose-eduglobal .eduglobal-title h3 {
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-}
-
-#why-choose-eduglobal .eduglobal-title p {
-  color: #888888f2;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  padding-bottom: 80px;
 }
 
 #why-choose-eduglobal .eduglobal-items {
@@ -291,19 +279,6 @@
   background-color: #B3D369;
 }
 
-#popular-categories .popular-categories-title {
-  padding: 72px 0px 40px;
-}
-
-#popular-categories .popular-categories-title h2 {
-  font-family: "Rubik", sans-serif;
-}
-
-#popular-categories .popular-categories-title p {
-  color: #888888f2;
-  margin-top: 15px;
-}
-
 #popular-categories a {
   text-decoration: none;
   width: 175px !important;
@@ -358,15 +333,15 @@
 
 #about-us {
   font-family: "Rubik", sans-serif;
+  margin-top: 80px;
 }
 
 #about-us .about-us-content {
   z-index: 2;
-  height: 393px;
-  width: 100%;
   border-radius: 0px 200px 200px 0px;
   padding: 43px;
-  background-color: white;
+  margin-right: -60px;
+  background-color: white !important;
   -webkit-box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) !important;
           box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
@@ -412,6 +387,16 @@
   position: relative;
 }
 
+#about-us .about-us-image .play-circle {
+  border-radius: 50%;
+  background-color: #ffc107;
+  color: white;
+  position: absolute;
+  font-size: 55px;
+  top: 47%;
+  left: 48%;
+}
+
 #about-us .about-us-image .img-overlay {
   height: 100%;
   width: 100%;
@@ -422,31 +407,8 @@
   opacity: 0.3;
 }
 
-#about-us .about-us-image .img-overlay .play-circle {
-  border-radius: 50%;
-  background-color: #ffc107;
-  color: white;
-  position: absolute;
-  font-size: 53px;
-  top: 45%;
-  left: 47%;
-}
-
 #our-courses {
   font-family: "Rubik", sans-serif;
-}
-
-#our-courses .our-courses-title {
-  margin-top: 80px;
-}
-
-#our-courses .our-courses-title h2 {
-  font-family: "Rubik", sans-serif;
-}
-
-#our-courses .our-courses-title p {
-  color: #888888f2;
-  margin-top: 15px;
 }
 
 #our-courses .card {
@@ -589,44 +551,320 @@
 }
 
 #bottom-counter {
+  margin-top: 80px;
   background-image: url("../img/counter_bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
+  background-position-y: 58%;
   background-size: cover;
   width: 100%;
   height: 100%;
-  margin-top: 80px;
 }
 
 #bottom-counter .overlay {
   background-color: rgba(7, 41, 77, 0.7);
 }
 
-#bottom-counter .item {
+#bottom-counter .item-content {
   margin: 90px 0px;
   color: white;
+  padding: 11px 26px 0px 26px;
 }
 
-#bottom-counter .item h3 {
+#bottom-counter .item-content h3 {
   font-size: 30px;
   font-weight: bold;
   line-height: 1.5;
 }
 
-#bottom-counter .item span {
+#bottom-counter .item-content span {
   color: white;
   font-family: "Rubik", sans-serif;
 }
 
-#bottom-counter .item .value {
+#bottom-counter .item-content .value {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-#bottom-counter .item .key {
+#bottom-counter .item-content .key {
   font-size: 17px;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+#upcoming-events .card {
+  font-family: "Rubik", sans-serif;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 22rem;
+  margin-top: 30px;
+  border-radius: 10px !important;
+  position: relative;
+}
+
+#upcoming-events .card .content-image {
+  overflow: hidden;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+#upcoming-events .card .content-image a img {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#upcoming-events .card .content-image a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#upcoming-events .card .content-image .image-badge {
+  height: 80px;
+  width: 75px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+}
+
+#upcoming-events .card .content-image .image-badge .badge-date h5 {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 18px 0px 24px;
+}
+
+#upcoming-events .card .content-image .image-badge .badge-date h5 span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#upcoming-events .card .content-image .image-badge .badge-time {
+  text-align: center;
+  background-color: #ffc107;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: "Rubik", sans-serif;
+}
+
+#upcoming-events .card .content-image .image-badge .badge-time ul {
+  padding: 6px;
+}
+
+#upcoming-events .card .content-image .image-badge .badge-time ul li {
+  font-size: 14px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+#upcoming-events .card .card-body {
+  padding: 8px 20px 0px 20px;
+}
+
+#upcoming-events .card .card-body ul {
+  padding-top: 7px;
+}
+
+#upcoming-events .card .card-body ul li {
+  padding-right: 17px;
+}
+
+#upcoming-events .card .card-body ul li a.li-yellow {
+  text-decoration: none;
+  color: #ffc107;
+  font-size: 14px;
+}
+
+#upcoming-events .card .card-body ul i {
+  padding-right: 7px;
+}
+
+#upcoming-events .card .card-body a.card-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#upcoming-events .card hr {
+  margin: -7px 20px 0px 20px;
+}
+
+#upcoming-events .card p {
+  color: #888888f2;
+  font-size: 16px;
+  padding: 12px 17px;
+}
+
+#get-free-courses {
+  margin-top: 80px;
+  background-image: url("../img/pattern_bg.png");
+  background-color: #07294d;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#get-free-courses .free-course-items {
+  padding-top: 96px;
+}
+
+#get-free-courses .free-course-items .register {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 42px 58px;
+}
+
+#get-free-courses .free-course-items .register h2 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+#get-free-courses .free-course-items .register h2 span {
+  color: #ffbc09;
+}
+
+#get-free-courses .free-course-items .register p {
+  color: #888888f2;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 15px;
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form .form-group .form-control {
+  height: 47px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 17px;
+  height: auto;
+}
+
+#get-free-courses .free-course-items .register form .form-group ::-webkit-input-placeholder {
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form .form-group :-ms-input-placeholder {
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form .form-group ::-ms-input-placeholder {
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form .form-group ::placeholder {
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form .form-group select.form-control ::-webkit-input-placeholder {
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form .form-group select.form-control :-ms-input-placeholder {
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form .form-group select.form-control ::-ms-input-placeholder {
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form .form-group select.form-control ::placeholder {
+  color: white;
+}
+
+#get-free-courses .free-course-items .register form button {
+  color: white;
+  padding: 10px 32px;
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#our-gallery .galery-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 22px;
+}
+
+#our-gallery .galery-buttons li {
+  margin-right: 10px;
+}
+
+#our-gallery .galery-buttons li button {
+  padding: 5px 25px;
+  border-radius: 4px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #292b2c;
+  background-color: #eee;
+}
+
+#our-gallery .galery-buttons li button:hover {
+  color: white;
+  background-color: #ffbc09;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#our-gallery .galery-buttons li button.active {
+  color: white;
+  background-color: #ffbc09;
+}
+
+#our-teachers {
+  padding: 100px 0;
+  width: 100%;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#our-teachers .teachers-overlay {
+  position: absolute;
+  background-image: url("../img/teacher_bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1309px;
+  height: 854px;
+  -webkit-transform: translate3d(0px, -147.125px, 0px);
+          transform: translate3d(0px, -147.125px, 0px);
+  -webkit-transition: -webkit-transform 100ms ease 0s;
+  transition: -webkit-transform 100ms ease 0s;
+  transition: transform 100ms ease 0s;
+  transition: transform 100ms ease 0s, -webkit-transform 100ms ease 0s;
+  z-index: -1;
+}
+
+#our-teachers .teachers-title {
+  text-align: center;
+  color: white;
+}
+
+#our-teachers .teachers-title h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+#our-teachers .teachers-title p {
+  margin-top: 15px;
+}
+
+#our-teachers::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(7, 41, 77, 0.9);
 }
 
 a.animated {
@@ -638,5 +876,19 @@ a.animated {
 
 a.animated:hover {
   color: #ffc107;
+}
+
+.title-style {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.title-style h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+.title-style p {
+  color: #888888f2;
+  margin-top: 15px;
 }
 /*# sourceMappingURL=style.css.map */

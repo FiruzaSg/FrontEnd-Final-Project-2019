@@ -1,9 +1,27 @@
-$(document).ready(function() {
-  $(".alertbox .btnclose").click(function() {
+$(document).ready(function () {
+
+  // Alert Top Message
+
+  $(".alertbox .btnclose").click(function () {
     $(".alertbox").addClass("d-none");
   });
 
-  $(".navbar .navbar-nav .nav-item").hover(function() {
+
+  //Navbar Scroll
+
+  $(window).scroll(function () {
+    var a = $(this).scrollTop();
+    if (a >=100) {
+      $('.navbar').addClass('fixed-top');
+    }else{
+      $('.navbar').removeClass('fixed-top');
+    }
+  });
+
+
+  // Navbar Dropdown menu
+
+  $(".navbar .navbar-nav .nav-item").hover(function () {
     if (
       $(this)
         .find(".dropdown-menu")
@@ -19,6 +37,9 @@ $(document).ready(function() {
     }
   });
 
+
+  // Main Slider
+
   if ($(".companies-slider").length) {
     $(".companies-slider").slick({
       // infinite: true,
@@ -27,18 +48,23 @@ $(document).ready(function() {
     });
   }
 
+
+  // About Us Counter
+
+  if ($("#about-us .counter").length) {
+    $("#about-us .counter .value").counterUp({
+      delay: 10,
+      time: 1000
+    });
+  }
+
+
+  // Bottom Counter
+
   if ($("#bottom-counter").length) {
     $("#bottom-counter .value").counterUp({
       delay: 10,
       time: 2000
     });
   }
-
-  if ($("#about-us .counter").length) {
-    $("#about-us .counter .value").counterUp({
-      delay: 10,
-      time: 2000
-    });
-  }
-
 });
