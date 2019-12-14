@@ -21,10 +21,10 @@ header {
 
 .alertbox {
   background-color: $primary-red-color;
-  border-radius: 0%;
+  border-radius: 0px;
   position: relative;
   p {
-    letter-spacing: -0.5px;
+    letter-spacing: $primary-letter-spacing;
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -63,34 +63,13 @@ header {
           }
           span {
             font-size: 14px;
-            letter-spacing: -0.5px;
+            letter-spacing: $primary-letter-spacing;
           }
           &:hover {
             color: $primary-orange-color;
           }
         }
       }
-      // li {
-      //   font-family: $secondary-font-family;
-      //   a {
-      //     text-decoration: none;
-      //     font-family: $primary-font-family;
-      //     letter-spacing: -0.5px;
-      //     color: white;
-      //     font-size: 14px;
-      //     transition: all 0.3s;
-      //     &:hover {
-      //       color: $primary-orange-color;
-      //     i {
-      //       color: white;
-      //     }
-      //     span {
-      //       font-size: 14px;
-      //     }
-      //     }
-
-      //   }
-      // }
     }
   }
   .social-media {
@@ -103,9 +82,8 @@ header {
         span,
         i {
           color: white;
-        }
-        i {
-          transition: all 0.3s;
+          cursor: pointer;
+          transition: 0.2s;
           &:hover {
             color: $primary-orange-color;
           }
@@ -158,9 +136,9 @@ header {
       li {
         padding-right: 6px;
         a {
-          letter-spacing: -0.5px;
+          letter-spacing: $primary-letter-spacing;
           font-family: $primary-font-family;
-          font-size: 15px;
+          font-size: 14px;
           background-color: white;
           font-weight: bold;
           color: $secondary-black-color;
@@ -258,7 +236,7 @@ header {
       .book-box,
       .globe-box,
       .instructor-box {
-        border-radius: 100%;
+        border-radius: 50%;
         display: inline-block;
         padding: 24px;
         position: relative;
@@ -406,16 +384,16 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 22rem;
     margin-top: 30px;
-    border-radius: 10px !important;
+    border-radius: $card-radius !important;
     // margin-top: 20px;
     .content-image {
       overflow: hidden;
-      border-top-left-radius: 10px !important;
-      border-top-right-radius: 10px !important;
+      border-top-left-radius: $card-radius !important;
+      border-top-right-radius: $card-radius !important;
       a {
         img {
-          border-top-left-radius: 10px !important;
-          border-top-right-radius: 10px !important;
+          border-top-left-radius: $card-radius !important;
+          border-top-right-radius: $card-radius !important;
           transition: all 0.5s ease-in-out;
           &:hover {
             transform: scale(1.1);
@@ -468,8 +446,8 @@ header {
       // background-color: white;
       background-color: rgba(0, 0, 0, 0.03) !important;
       justify-content: space-between;
-      border-bottom-left-radius: 10px !important;
-      border-bottom-right-radius: 10px !important;
+      border-bottom-left-radius: $card-radius !important;
+      border-bottom-right-radius: $card-radius !important;
 
       .teacher {
         align-items: center;
@@ -566,16 +544,16 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 22rem;
     margin-top: 30px;
-    border-radius: 10px !important;
+    border-radius: $card-radius !important;
     position: relative;
     .content-image {
       overflow: hidden;
-      border-top-left-radius: 10px !important;
-      border-top-right-radius: 10px !important;
+      border-top-left-radius: $card-radius !important;
+      border-top-right-radius: $card-radius !important;
       a {
         img {
-          border-top-left-radius: 10px !important;
-          border-top-right-radius: 10px !important;
+          border-top-left-radius: $card-radius !important;
+          border-top-right-radius: $card-radius !important;
           transition: all 0.5s ease-in-out;
           &:hover {
             transform: scale(1.1);
@@ -662,7 +640,7 @@ header {
     padding-top: 96px;
     .register {
       background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
+      border-radius: $card-radius;
       align-items: center;
       margin-top: 20px;
       margin-bottom: 10px;
@@ -692,7 +670,7 @@ header {
             font-family: $third-font-family;
             font-size: 17px;
             height: auto;
-            color: white ;
+            color: white;
           }
           ::placeholder {
             color: white;
@@ -747,6 +725,15 @@ header {
   background: transparent;
   overflow: hidden;
   z-index: 1;
+  &::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(7, 41, 77, 0.9);
+  }
   .teachers-overlay {
     position: absolute;
     background-image: url("../img/teacher_bg.jpg");
@@ -756,36 +743,106 @@ header {
     width: 1309px;
     height: 854px;
     transform: translate3d(0px, -147.125px, 0px);
-    transition: transform 100ms ease 0s;
     z-index: -1;
   }
   .teachers-title {
     text-align: center;
     color: white;
-    h2 {
-      font-family: $secondary-font-family;
-    }
+    margin-bottom: 50px;
+    font-family: $secondary-font-family;
     p {
       margin-top: 15px;
     }
   }
-  .card{
-    border-radius: 10px;
-    img{
-     
+  .card {
+    border: none;
+    border-radius: $card-radius;
+    img {
+      border-top-left-radius: $card-radius;
+      border-top-right-radius: $card-radius;
+    }
+    .main-slider-overlay {
+      overflow: hidden;
+      transition: 0.5s;
+      ul {
+        position: absolute;
+      }
+    }
+  }
+  .card:hover {
+    .main-slider-overlay {
+      height: 256px;
+      width: 256px;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-top-left-radius: $card-radius;
+      border-top-right-radius: $card-radius;
+      ul {
+        position: absolute;
+        left: 55px;
+        transition: 0.8s ease;
+        li {
+          padding-right: 28px;
+          a {
+            text-decoration: none;
+            i {
+              color: white;
+              transition: all 0.3s;
+              &:hover {
+                color: $primary-orange-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-body {
+    text-align: center;
+    padding: 10px;
+    h5 {
+      font-weight: bold;
+    }
+    p {
+      font-family: $third-font-family;
+      font-size: 17px;
+      color: #888888;
     }
   }
 }
-#our-teachers::before {
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: rgba(7, 41, 77, 0.9);
-}
 
+#student-say {
+  text-align: center;
+  .client {
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 223px;
+    width: 500px !important;
+    border-radius: $card-radius;
+ 
+
+    .item-content {
+      // padding: 30px 30px 30px 50px;
+      img {
+        position: absolute;
+        border-radius: 5px;
+      }
+      h6 {
+        font-family: $secondary-font-family;
+        font-weight: bold;
+      }
+      span {
+        font-style: italic;
+        color: $secondary-orange-color;
+      }
+      p {
+        color: $primary-gray-color;
+        // margin-top: 15px;
+      }
+    }
+  }
+}
 a.animated {
   text-decoration: none;
   color: $secondary-black-color;
@@ -806,3 +863,50 @@ a.animated {
     margin-top: 15px;
   }
 }
+
+// .card {
+//   border: none;
+//   border-radius: $card-radius;
+//   img {
+//     border-top-left-radius: $card-radius;
+//     border-top-right-radius: $card-radius;
+//     position: relative;
+//   }
+
+//   // @keyframes main-slider-overlay {
+//   //   from {
+//   //     top: 0px;
+//   //   }
+//   //   to {
+//   //     top: 100px;
+//   //   }
+//   // }
+//   &:hover {
+//     .main-slider-overlay {
+//       height: 0;
+//       width: 256px;
+//       position: absolute;
+//       background-color: rgba(0, 0, 0, 0.3);
+//       border-top-left-radius: $card-radius;
+//       border-top-right-radius: $card-radius;
+//       transition: all 0.8s;
+
+//       // transform: translate();
+//     }
+//   }
+
+//   // .teacher-img::before {
+//   //   bottom: 0;
+//   //   content: "";
+//   //   left: 0;
+//   //   position: absolute;
+//   //   right: 0;
+//   //   top: 0;
+//   //   background-color: rgba(0,0,0,0.5);
+//   //   height: 256px;
+//   //   width: 256px;
+//   //   transition: all 0.5s ease-in-out;
+//   //   border-top-left-radius: $card-radius;
+//   //   border-top-right-radius: $card-radius;
+//   // }
+// }

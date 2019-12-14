@@ -11,9 +11,9 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     var a = $(this).scrollTop();
-    if (a >=100) {
+    if (a >= 100) {
       $('.navbar').addClass('fixed-top');
-    }else{
+    } else {
       $('.navbar').removeClass('fixed-top');
     }
   });
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
   if ($(".companies-slider").length) {
     $(".companies-slider").slick({
-      arrows:false,
+      arrows: false,
       slidesToShow: 6,
       slidesToScroll: 1
     });
@@ -67,4 +67,21 @@ $(document).ready(function () {
       time: 2000
     });
   }
+
+
+  $('.card').mouseenter(function () {
+    $('.card .main-slider-overlay ul').css({ "top": "105px" });
+
+  });
+  $('.card').mouseleave(function () {
+    $('.card .main-slider-overlay ul').css({ "top": "240px" });
+    console.log("left");
+  });
+
+
+  $('.clients-slider').slick({
+    arrows: false,
+    slidesToShow: 2,
+    slidesToScroll: 1
+  });
 });
