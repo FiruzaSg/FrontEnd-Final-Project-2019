@@ -37,12 +37,22 @@ $(document).ready(function () {
     }
   });
 
+  $('i.new').click(function () {
+    if ($(this).hasClass('fa-search')) {
+      $(this).removeClass('fa-search').addClass('fa-times');
+    } else {
+      $(this).addClass('fa-search').removeClass('fa-times');
+    }
+
+  })
+
 
   // Categories Slider
 
   if ($(".companies-slider").length) {
     $(".companies-slider").slick({
       arrows: false,
+      accessibility: false,
       slidesToShow: 6,
       slidesToScroll: 1
     });
@@ -75,13 +85,55 @@ $(document).ready(function () {
   });
   $('.card').mouseleave(function () {
     $('.card .main-slider-overlay ul').css({ "top": "240px" });
-    console.log("left");
   });
 
 
-  $('.clients-slider').slick({
+  $('.students-slider').slick({
     arrows: false,
+    accessibility: false,
+
     slidesToShow: 2,
     slidesToScroll: 1
   });
+
+  $('.clients-slider').slick({
+    arrows: false,
+    accessibility: false,
+
+    slidesToShow: 6,
+    slidesToScroll: 1
+  });
+
+  $('.card').mouseenter(function () {
+    $('.card .blog-overlay ul').css({ "top": "80px" });
+
+  });
+  $('.card').mouseleave(function () {
+    $('.card .blog-overlay ul').css({ "top": "240px" });
+  });
+
+
+
+  $(".portfolio-item").isotope({
+    itemSelector: ".item",
+    layoutMode: "fitRows"
+  });
+  $(".portfolio-menu ul li").click(function () {
+    console.log(true);
+
+    $(".portfolio-menu ul li").removeClass("active");
+    $(this).addClass("active");
+
+    var selector = $(this).attr("data-filter");
+    $(".portfolio-item").isotope({
+      filter: selector
+    });
+    return false;
+  });
+
+
+
+  
+
+
 });

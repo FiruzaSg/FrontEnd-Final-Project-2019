@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eduglobal - Education & Courses HTML Template</title>
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -17,6 +17,8 @@
 </head>
 
 <body>
+
+
     <!-- Alert top -->
     <div class="alertbox">
         <div class="container">
@@ -81,7 +83,7 @@
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container">
                 <div class="col-md-5">
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo_dark.png" alt=""></a>
+                    <a class="navbar-brand" href="homepage.html"><img src="assets/img/logo_dark.png" alt=""></a>
                 </div>
                 <div class="col-md-7">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -96,7 +98,7 @@
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item active"
-                                                href="file:///C:/Users/FiruzaSg/FrontEnd-Final-Project-2019/FRONT%20END%20FINAL%20PROJECT%202019/index.html">Home
+                                                href="homepage.html">Home
                                                 Version 1</a>
                                             <a class="dropdown-item" href="#">Home Version 2</a>
                                             <a class="dropdown-item" href="#">Home Version 3</a>
@@ -111,7 +113,9 @@
                                             PAGES
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">About us</a>
+                                            <a class="dropdown-item"
+                                                href="aboutus.html">About
+                                                us</a>
                                             <a class="dropdown-item" href="#">Galery</a>
                                             <a class="dropdown-item" href="#">FAQ</a>
                                             <a class="dropdown-item" href="#">404 page</a>
@@ -125,7 +129,7 @@
                                             COURSE
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Courses</a>
+                                            <a class="dropdown-item" href="ourcourses.html">Courses</a>
                                             <a class="dropdown-item" href="#">Course details</a>
                                         </div>
                                     </li>
@@ -168,11 +172,14 @@
                                     <li class="nav-search">
                                         <a class="nav-link" href="#" id="navbarDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-search"></i>
+                                            <i class="fas fa-search new"></i>
                                         </a>
 
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <div class="input-menu"><input type="text"></div>
+                                        <div class="dropdown-menu search-menu" aria-labelledby="navbarDropdown">
+                                            <div class="input-menu search-input"><input type="text" placeholder="Search"
+                                                    class="form-control" id="search_input">
+                                                <i class="fas fa-search new2"></i>
+                                            </div>
                                         </div>
 
 
@@ -196,9 +203,22 @@
         <!-- Main Slider -->
         <section id="main-slider">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="slider-item">
+                    <h1>WELCOME TO EDUGLOBAL</h1>
+                    <p>Lorem is simply text of the printing and typesetting industry.</p>
+                    <button type="submit" class="btn btn-warning btn-start"><span>Get Started</span></button>
+
+                    <button class="btn btn-default learn-btn">
+                        <div class="btn-blog-content">
+                            <span>Learn More</span>
+                        </div>
+                    </button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assets/img/banner1.jpg" class="img-fluid" alt="...">
+
+
                         <div class="main-slider-overlay"></div>
                     </div>
                     <div class="carousel-item">
@@ -210,7 +230,6 @@
                         <div class="main-slider-overlay"></div>
                     </div>
                 </div>
-
 
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -284,8 +303,8 @@
         <!-- Most Popular Categories -->
         <section id="popular-categories">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 ">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
                         <div class="popular-categories-title title-style">
                             <h2><b>Most Popular Categories</b></h2>
                             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure
@@ -296,12 +315,6 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 companies-slider">
-                        <a href="#" class="popular-item item1">
-                            <div class="item-content">
-                                <i class="fa fa-globe"></i>
-                                <p>Language</p>
-                            </div>
-                        </a>
                         <a href="#" class="popular-item item2">
                             <div class="item-content">
                                 <i class="fa fa-chart-line"></i>
@@ -368,12 +381,10 @@
                                 <p>Development</p>
                             </div>
                         </a>
+
                     </div>
                 </div>
             </div>
-
-
-
         </section>
 
         <!-- About Us -->
@@ -430,8 +441,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/course_img1.jpg"
-                                        class="card-img-top" alt="..."></a></div>
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img1.jpg"></a></div>
                             <div class="card-body">
                                 <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
                                 <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
@@ -468,8 +478,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/course_img2.jpg"
-                                        class="card-img-top" alt="..."></a></div>
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img2.jpg"></a></div>
                             <div class="card-body">
                                 <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
                                 <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
@@ -506,8 +515,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/course_img3.jpg"
-                                        class="card-img-top" alt="..."></a></div>
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img3.jpg"></a></div>
                             <div class="card-body">
                                 <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
                                 <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
@@ -544,8 +552,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/course_img4.jpg"
-                                        class="card-img-top" alt="..."></a></div>
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img4.jpg"></a></div>
                             <div class="card-body">
                                 <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
                                 <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
@@ -581,8 +588,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/course_img5.jpg"
-                                        class="card-img-top" alt="..."></a></div>
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img5.jpg"></a></div>
                             <div class="card-body">
                                 <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
                                 <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
@@ -617,8 +623,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/course_img6.jpg"
-                                        class="card-img-top" alt="..."></a></div>
+                            <div class="content-image"><a href="#"><img src="assets/img/course_img6.jpg"></a></div>
                             <div class="card-body">
                                 <a href="#" class="card-title animated">Nullam id varius nunc id varius nunc</a>
                                 <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
@@ -729,8 +734,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/event_img1.jpg"
-                                        class="card-img-top" alt="..."></a>
+                            <div class="content-image"><a href="#"><img src="assets/img/event_img1.jpg"></a>
 
                                 <div class="image-badge">
                                     <div class="badge-date">
@@ -760,8 +764,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/event_img2.jpg"
-                                        class="card-img-top" alt="..."></a>
+                            <div class="content-image"><a href="#"><img src="assets/img/event_img2.jpg"></a>
 
                                 <div class="image-badge">
                                     <div class="badge-date">
@@ -791,8 +794,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
-                            <div class="content-image"><a href="#"><img src="assets/img/event_img3.jpg"
-                                        class="card-img-top" alt="..."></a>
+                            <div class="content-image"><a href="#"><img src="assets/img/event_img3.jpg"></a>
 
                                 <div class="image-badge">
                                     <div class="badge-date">
@@ -901,7 +903,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="portfolio-menu">
                     <div class="col-lg-12">
                         <ul class="galery-buttons list-unstyled justify-content-center">
                             <li><button class="btn active">All</button></li>
@@ -910,30 +912,28 @@
                             <li><button class="btn">Events</button></li>
                         </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="col-lg-4"></div>
-                        <div class="col-lg-4"></div>
-                        <div class="col-lg-4"></div>
-                        <ul class="list-unstyled d-flex">
-                            <li>
-                                <img src="assets/img/gallery_item_small1_360X240.jpg" alt="">
-                            </li>
-                            <li><img src="assets/img/gallery_item_small2_360X240.jpg" alt=""></li>
-                            <li><img src="assets/img/gallery_item_small3_360X240.jpg" alt=""></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
+                    <!-- <ul class="list-unstyled">
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".lib">Library</li>
+                            <li data-filter=".camp">Campus</li>
+                            <li data-filter=".eve">Events</li>
+                        </ul> -->
 
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="item lib"><img src="assets/img/gallery_item_small1_360X240.jpg" alt=""></div>
+                    <div class="item camp"><img src="assets/img/gallery_item_small2_360X240.jpg" alt=""></div>
+                    <div class="item eve"><img src="assets/img/gallery_item_small3_360X240.jpg" alt=""></div>
+                    <div class="item  lib"><img src="assets/img/gallery_item_small5_360X240.jpg" alt=""></div>
+                    <div class="item camp"><img src="assets/img/gallery_item_small6_360X240.jpg" alt=""></div>
+                    <div class="item eve"><img src="assets/img/gallery_item_small8_360X240.jpg" alt=""></div>
+                    <div class="item lib"><img src="assets/img/gallery_item_small9_360X240.jpg" alt=""></div>
+                    <div class="item camp"><img src="assets/img/gallery_item_small10_360X240.jpg" alt=""></div>
+                    <div class="item eve"><img src="assets/img/gallery_item_small11_360X240.jpg" alt=""></div>
+                    <div class="item lib"><img src="assets/img/gallery_item_small12_360X240.jpg" alt=""></div>
+                    <div class="item camp"><img src="assets/img/gallery_item_small14_360X240.jpg" alt=""></div>
+                    <div class="item eve"><img src="assets/img/gallery_item_small15_360X240.jpg" alt=""></div>
                 </div>
             </div>
         </section>
@@ -954,7 +954,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
                         <div class="card" style="width: 16rem;">
-                            <img src="assets/img/team_img1.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/team_img1.jpg">
                             <div class="main-slider-overlay">
                                 <div class="col-lg-12">
                                     <div class="teacher-social-media">
@@ -976,7 +976,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="card" style="width: 16rem;">
-                            <img src="assets/img/team_img2.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/team_img2.jpg">
                             <div class="main-slider-overlay">
                                 <div class="col-lg-12">
                                     <div class="teacher-social-media">
@@ -998,7 +998,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="card" style="width: 16rem;">
-                            <img src="assets/img/team_img3.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/team_img3.jpg">
                             <div class="main-slider-overlay">
                                 <div class="col-lg-12">
                                     <div class="teacher-social-media">
@@ -1020,7 +1020,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="card" style="width: 16rem;">
-                            <img src="assets/img/team_img4.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/team_img4.jpg">
                             <div class="main-slider-overlay">
                                 <div class="col-lg-12">
                                     <div class="teacher-social-media">
@@ -1047,6 +1047,7 @@
             </div>
         </section>
 
+        <!-- Student Say Section -->
         <section id="student-say">
             <div class="container">
                 <div class="row justify-content-center">
@@ -1060,58 +1061,43 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 clients-slider">
+                    <div class="col-lg-12 students-slider d-flex">
                         <div class="client">
                             <div class="item-content">
-                                <div class="testimonial_img">
-                                    <img class="client-photo" src="assets/img/user3.jpg" alt="client">
-                                    <div class="testi_meta">
-                                        <div class="testi_user">
-                                            <h6>Lissa Castro</h6>
-                                            <span class="text_default">Co-Founder</span>
-                                        </div>
-                                        <div class="testi_desc">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                                accusantium doloremque laudantium, quaeillo inventore veritatis et quasi
-                                                architecto beatae vitae dicta sunt explicabo.</p>
-                                        </div>
-                                    </div>
+                                <img class="client-photo" src="assets/img/client_img1.jpg" alt="client">
+                                <div class="user-info">
+                                    <h6>Lissa Castro</h6>
+                                    <span>Co-Founder</span>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, quaeillo inventore veritatis et quasi
+                                        architecto beatae vitae dicta sunt explicabo.</p>
+                                    <i class="fas fa-quote-right"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="client">
                             <div class="item-content">
-                                <div class="testimonial_img">
-                                    <img class="client-photo" src="assets/img/user3.jpg" alt="client">
-                                    <div class="testi_meta">
-                                        <div class="testi_user">
-                                            <h6>Lissa Castro</h6>
-                                            <span class="text_default">Co-Founder</span>
-                                        </div>
-                                        <div class="testi_desc">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                                accusantium doloremque laudantium, quaeillo inventore veritatis et quasi
-                                                architecto beatae vitae dicta sunt explicabo.</p>
-                                        </div>
-                                    </div>
+                                <img class="client-photo" src="assets/img/client_img2.jpg" alt="client">
+                                <div class="user-info">
+                                    <h6>Lissa Castro</h6>
+                                    <span>Co-Founder</span>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, quaeillo inventore veritatis et quasi
+                                        architecto beatae vitae dicta sunt explicabo.</p>
+                                    <i class="fas fa-quote-right"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="client">
                             <div class="item-content">
-                                <div class="testimonial_img">
-                                    <img class="client-photo" src="assets/img/user3.jpg" alt="client">
-                                    <div class="testi_meta">
-                                        <div class="testi_user">
-                                            <h6>Lissa Castro</h6>
-                                            <span class="text_default">Co-Founder</span>
-                                        </div>
-                                        <div class="testi_desc">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                                accusantium doloremque laudantium, quaeillo inventore veritatis et quasi
-                                                architecto beatae vitae dicta sunt explicabo.</p>
-                                        </div>
-                                    </div>
+                                <img class="client-photo" src="assets/img/client_img3.jpg" alt="client">
+                                <div class="user-info">
+                                    <h6>Lissa Castro</h6>
+                                    <span>Co-Founder</span>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, quaeillo inventore veritatis et quasi
+                                        architecto beatae vitae dicta sunt explicabo.</p>
+                                    <i class="fas fa-quote-right"></i>
                                 </div>
                             </div>
                         </div>
@@ -1121,8 +1107,336 @@
                     </div>
                 </div>
         </section>
+
+        <!-- Our Blog -->
+        <section id="our-blog">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="our-blog-title title-style">
+                            <h2><b>Our Blog</b></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/blog_small_img1.jpg"
+                                        class="img-fluid"></a></div>
+                            <div class="blog-overlay">
+                                <div class="col-lg-12">
+                                    <div class="teacher-social-media">
+                                        <ul class="teacher-links mt-3 list-unstyled d-flex">
+                                            <li><a href="#"><i class="fas fa-link play-circle"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Why are tickets to fly to Lagos expensive?</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                                <a href="#" class="animated">Read More</a>
+                            </div>
+
+                            <div class="card-footer d-flex">
+                                <ul class="list-unstyled d-flex">
+                                    <li><i class="far fa-calendar i-yellow"></i><a href="#" class="animated">15 May,
+                                            2019</a></li>
+                                    <li><i class="fas fa-comments i-yellow"></i><a href="#" class="animated">2
+                                            Comment</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/blog_small_img2.jpg"
+                                        class="img-fluid"></a></div>
+                            <div class="blog-overlay">
+                                <div class="col-lg-12">
+                                    <div class="teacher-social-media">
+                                        <ul class="teacher-links mt-3 list-unstyled d-flex">
+                                            <li><a href="#"><i class="fas fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Why are tickets to fly to Lagos expensive?</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                                <a href="#" class="animated">Read More</a>
+                            </div>
+
+                            <div class="card-footer d-flex">
+                                <ul class="list-unstyled d-flex">
+                                    <li><i class="far fa-calendar i-yellow"></i><a href="#" class="animated">23 May,
+                                            2019</a></li>
+                                    <li><i class="fas fa-comments i-yellow"></i><a href="#" class="animated">2
+                                            Comment</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card">
+                            <div class="content-image"><a href="#"><img src="assets/img/blog_small_img3.jpg"
+                                        class="img-fluid"></a></div>
+                            <div class="blog-overlay">
+                                <div class="col-lg-12">
+                                    <div class="teacher-social-media">
+                                        <ul class="teacher-links mt-3 list-unstyled d-flex">
+                                            <li><a href="#"><i class="fas fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-title animated">Why are tickets to fly to Lagos expensive?</a>
+                                <p class="card-text">If you are going to use a passage of Lorem Ipsum you need to be
+                                    sure anything embarrassing hidden in the middle of text.</p>
+                                <a href="#" class="animated">Read More</a>
+                            </div>
+
+                            <div class="card-footer d-flex">
+                                <ul class="list-unstyled d-flex">
+                                    <li><i class="far fa-calendar i-yellow"></i><a href="#" class="animated">16 May,
+                                            2019</a></li>
+                                    <li><i class="fas fa-comments i-yellow"></i><a href="#" class="animated">2
+                                            Comment</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                    <a href="homepage.html">
+                        <button class="btn btn-default btn-view-blog">
+                            <div class="btn-blog-content">
+                                <span>View All Blog</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Client -->
+        <section id="our-client">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="our-clients-title title-style">
+                            <h2><b>Our Client</b></h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure
+                                there <br>
+                                isn't anything embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-12 clients-slider">
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo1.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo2.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo3.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo4.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo5.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo2.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo1.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo2.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo3.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo4.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo5.png"></a>
+                        </div>
+                        <div class="item-content">
+                            <a href="#"><img src="assets/img/cl_logo2.png"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+
+        <!-- 3 Sections of Footer -->
+        <section id="footer-1">
+            <div class="container">
+                <div class="row footer-1-items">
+                    <div class="col-lg-7">
+                        <div class="footer-title mt-5 mb-5">
+                            <h2><b>Get The Coaching Training Today!</b></h2>
+                            <p>If you are going to use a passage of embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <a href="homepage.html">
+                            <button class="btn btn-default btn-view-blog">
+                                <div class="btn-blog-content">
+                                    <span>Get Started</span>
+                                </div>
+                            </button>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer-2">
+            <div class="container">
+                <div class="footer-2-items">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="footer-logo">
+                                <a href="homepage.html"><img alt="logo" src="assets/img/logo_white.png"></a>
+                            </div>
+                            <p>Phasellus blandit massa enim. elit id varius nunc. Lorem ipsum dolor sit amet,
+                                consectetur
+                                industry.</p>
+                            <ul class="list-unstyled">
+                                <li class="contact-list-item">
+                                    <a href="#" class="animated"><i
+                                            class="fas fa-map-marker-alt px-2"></i><span>Califonia
+                                            Street san Francisco, CA</span></a>
+                                </li>
+
+                                <li class="contact-list-item">
+                                    <a href="mailto:info@sitename.com" class="animated"><i
+                                            class="far fa-envelope px-2"></i><span>info@sitename.com</span></a>
+                                </li>
+                                <li class="contact-list-item">
+                                    <a href="#" class="animated"><i class="fas fa-mobile-alt px-2"></i><span>+ 457 789
+                                            789
+                                            65</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2">
+                            <h5 class="mt-2"><b>Useful Links</b></h5>
+                            <ul class="list-unstyled ">
+                                <li class="changable"><a href="#" class="changable">Join Us</a></li>
+                                <li class="changable"><a href="#" class="changable">About Us</a></li>
+                                <li class="changable"><a href="#" class="changable">Features</a></li>
+                                <li class="changable"><a href="#" class="changable">Feedback</a></li>
+                                <li class="changable"><a href="#" class="changable">Support center</a></li>
+                                <li class="changable"><a href="#" class="changable">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h5 class="mt-2"><b>Recent Posts</b></h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="post d-flex">
+                                        <div class="post-img">
+                                            <a href="#"><img src="assets/img/letest_post1.jpg"></a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
+                                            <span class="post-date">April 14, 2018</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post d-flex">
+                                        <div class="post-img">
+                                            <a href="#"><img src="assets/img/letest_post2.jpg"></a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
+                                            <span class="post-date">April 14, 2018</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post d-flex">
+                                        <div class="post-img">
+                                            <a href="#"><img src="assets/img/letest_post3.jpg"></a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
+                                            <span class="post-date">April 14, 2018</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-4 ">
+                            <h5 class="mt-2"><b>Subscribe Newsletter</b></h5>
+                            <p>Contrary to popular belief of lorem Ipsm Latin amet ltin from consectetur industry.</p>
+
+                            <form>
+                                <input type="text" class="form-control" required="" placeholder="Email Address">
+                                <button type="submit" class="btn btn-warning first-yellow-btn" name="submit"
+                                    value="Submit">Subscribe</button>
+
+                            </form>
+                            <div class="follow">
+                                <h5 class="mt-2"><b>Follow Us</b></h5>
+                                <ul class="list-unstyled d-flex">
+                                    <li class="item"><i class="fab fa-facebook-f"></i></li>
+                                    <li class="item"><i class="fab fa-twitter"></i></li>
+                                    <li class="item"><i class="fab fa-google-plus-g"></i></li>
+                                    <li class="item"><i class="fab fa-youtube"></i></li>
+                                    <li class="item"><i class="fab fa-instagram"></i></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <section id="footer-3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p class="mt-5 mb-5">© 2018 All Rights Reserved by
+                            Eduglobal.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled d-flex mt-5 mb-5">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </footer>
 
 
 
@@ -1130,6 +1444,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
